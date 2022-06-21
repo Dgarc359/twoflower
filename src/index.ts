@@ -1,1 +1,0 @@
-export * as AWSmock from './aws-mock';
