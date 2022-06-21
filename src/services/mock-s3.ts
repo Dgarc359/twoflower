@@ -1,5 +1,6 @@
 export class MockS3 {
     public getObjectStub = jest.fn().mockReturnValue(Promise.resolve(true));
+    public getObject = jest.fn();
 
     constructor(){
 
@@ -9,6 +10,12 @@ export class MockS3 {
         return {
             upload: jest.fn().mockImplementation(() => ({ promise: this.getObjectStub }))
         }
+    }
+
+    public initMocks() {
+        jest.mock('aws-sdk', () => {
+            
+        })
     }
     
 }

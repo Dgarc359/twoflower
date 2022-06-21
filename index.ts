@@ -1,1 +1,1 @@
-export * as AWSmock from './src/aws-mock';
+export {AWSmock} from './src/aws-mock';
