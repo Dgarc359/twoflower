@@ -3,6 +3,8 @@
 Twoflower helps eliminate boilerplate code and provides re-usable and simple AWS SDK mocking for locally testing lambda code
 
 ```js
+// example.test.ts
+
 import {AWSMock} from 'twoflower';
 const awsMock = new AWSMock(['S3', 'DynamoDB']); // simply pass in the services you would like to use as a string array
 
